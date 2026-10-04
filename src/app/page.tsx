@@ -67,6 +67,10 @@ export default function Home() {
     await run('/api/demo');
   }
 
+  async function cleanDemo() {
+    await run('/api/demo?case=clean');
+  }
+
   async function run(url: string, files?: File[]) {
     setBusy(true);
     setError('');
@@ -198,7 +202,7 @@ export default function Home() {
           <section className="intake" id="investigation">
             <div className="intake-heading">
               <div className="reveal-on-scroll"><p className="eyebrow"><span className="eyebrowline" /> YOUR WORKSPACE <span className="eyebrowsep">/</span> 01</p><h2>Start with the evidence.</h2><p>Upload a report and any sources it cites. DataDoctor will map the claims back to what supports them.</p></div>
-              <a className="download" href="/demo/primary-report.pdf" download>Download sample report <span aria-hidden="true">↓</span></a>
+              <div className="download-pair"><a className="download" href="/demo/primary-report.pdf" download>Download low-score sample <span aria-hidden="true">↓</span></a><a className="download" href="/demo/clean-sea-life-report.pdf" download>Download clean sea-life report <span aria-hidden="true">↓</span></a></div>
             </div>
             <div className="intake-grid">
               <div className="intake-side reveal-on-scroll">
@@ -219,7 +223,8 @@ export default function Home() {
                 <div className="intake-feature"><span>01</span><div><b>Source relationships</b><small>See where cited research leads.</small></div><i>↗</i></div>
                 <div className="intake-feature"><span>02</span><div><b>Evidence gaps</b><small>Find claims that need more support.</small></div><i>↗</i></div>
                 <div className="intake-feature"><span>03</span><div><b>Hidden instructions</b><small>Reveal text aimed at AI reviewers.</small></div><i>↗</i></div>
-                <div className="intake-demo"><span className="demo-orb">✳</span><div><b>Want a guided look?</b><small>Explore a fictional case and its evidence map.</small></div><button onClick={demo} disabled={busy} aria-label="Run demo case">↗</button></div>
+                <div className="intake-demo"><span className="demo-orb">✳</span><div><b>Low-score example</b><small>Explore the chemistry report and its evidence map.</small></div><button onClick={demo} disabled={busy} aria-label="Run low-score demo case">↗</button></div>
+                <div className="intake-demo"><span className="demo-orb">✧</span><div><b>Clean example</b><small>Review a sea otter ecology paper with no flagged concerns.</small></div><button onClick={cleanDemo} disabled={busy} aria-label="Run clean sea-life demo case">↗</button></div>
               </aside>
             </div>
             {error && <div role="alert" className="error"><b>We couldn’t analyze that document</b><p>{error}</p></div>}

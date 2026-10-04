@@ -476,6 +476,7 @@ body {
 .intake-heading h2 { margin: 0; color: #f1efff; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.06em; font-weight: 570; }
 .intake-heading > div > p:last-child { max-width: 620px; margin: 11px 0 0; color: #9d99b8; font-size: 12px; line-height: 1.7; }
 .intake-heading > .download { margin-bottom: 5px; white-space: nowrap; }
+.download-pair { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 12px 20px; margin-bottom: 5px; }
 .intake-grid { display: grid; grid-template-columns: 1.12fr .88fr; gap: 17px; }
 .intake-side { border-color: rgba(177, 165, 234, .22); background: linear-gradient(145deg, rgba(23, 20, 45, .94), rgba(13, 12, 27, .96)); box-shadow: 0 24px 90px rgba(0, 0, 0, .24); }
 .side-meta { border-color: rgba(177, 165, 234, .13); color: #8d87ad; }
@@ -594,7 +595,8 @@ html.motion-ready .hiddenalert.reveal-on-scroll { transition-duration: .85s; }
   .intake-heading { align-items: flex-start; flex-direction: column; gap: 12px; margin-bottom: 20px; }
   .intake-heading h2 { font-size: 2.2rem; }
   .intake-heading > div > p:last-child { font-size: 11px; }
-  .intake-heading > .download { font-size: 10px; }
+  .download-pair { justify-content: flex-start; gap: 9px 15px; }
+  .download-pair .download { font-size: 10px; }
   .intake-grid { grid-template-columns: 1fr; }
   .drop { min-height: 312px; }
   .intake-aside { padding: 20px; }

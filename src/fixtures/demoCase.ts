@@ -93,21 +93,66 @@ The calibration procedures and measurement notes are described in the accompanyi
 ];
 
 export const cleanCase: Fixture[] = [
-  { fileName: 'clean-report.md', role: 'primary', text: intro + `# A Multi-Site Sodium Chloride Crystallization Study
+  { fileName: 'clean-sea-life-report.md', role: 'primary', text: intro + `# Sea Otter Foraging Patterns Across Temperate Kelp Forests: A Multi-Site Study
 
-Authors: Mira Ellery
-Independent Research Center
+Journal of Marine Ecology | Research Article | Vol. 22, Issue 1 (2025)
 
-## Methods
-We tested 480 crystallization samples recruited from 12 laboratories across three regions in a randomized experiment.
+Authors: Dr. Mira Ellery and Jonah Reed
+Coastal Biodiversity Research Institute
 
-## Funding
-This work received independent funding from the Open Research Fund. The authors report no competing interests.
+Received 8 January 2025 | Revised 11 March 2025 | Accepted 2 April 2025
 
-## Findings
-In this sample, 52% of measured solutions formed visible crystals [1]. Results describe these experiments and do not establish that one vessel caused a change.
+## Abstract
+Sea otters (Enhydra lutris) are marine mammals in the weasel family that inhabit coastal waters of the North Pacific. They forage on invertebrates, including sea urchins, crabs, and clams, and may use stones as tools to open hard-shelled prey. Kelp forests provide habitat for many coastal species. This observational study summarizes foraging observations recorded across several coastal sites and seasons. Its conclusions describe the sampled locations and do not claim a universal pattern.
+
+Keywords: sea otter; Enhydra lutris; kelp forest; foraging; coastal ecology
+
+## 1. Overview
+Sea otters are members of the family Mustelidae and spend most of their lives in nearshore marine environments. Their dense fur provides insulation in cold water. Individuals commonly rest at the surface and feed on a varied diet of marine invertebrates. Their feeding activity is one part of a coastal food web [2].
+
+## 2. Habitat and feeding behavior
+Temperate kelp forests grow in cool, nutrient-rich coastal waters and provide structure for fish and invertebrates. Sea otters may forage on the seafloor and bring prey to the surface. Some use rocks or other hard objects to break open prey, a behavior described as tool use in natural history accounts. Diet and foraging activity can vary with local prey availability and habitat conditions.
+
+## 3. Materials and methods
+We analyzed 480 observation samples gathered at 12 coastal sites across three regions over three seasons using an observational study. Trained observers recorded foraging events using a shared field protocol. Site selection and observation periods were documented before analysis. The study summarizes observed behavior and does not assign animals to experimental treatment groups.
+
+## 4. Results
+Sea urchins were among the commonly recorded prey items in the analyzed observations [1]. The mix of recorded prey varied across the monitored sites and seasons. These descriptions apply to the collected observations and are not estimates for every sea otter population.
+
+## 5. Discussion
+The observations provide a description of feeding activity at the monitored locations. Differences among sites may reflect local habitat and prey availability, but this study does not test those explanations. Additional long-term observations could help describe seasonal change.
+
+## 6. Conclusion
+Across the sites included in this study, sea urchins were common in recorded foraging observations. The findings apply to the sampled sites and observation periods; they do not establish a universal pattern for all sea otters.
+
+## Author contributions
+Mira Ellery designed the field protocol and drafted the manuscript. Jonah Reed coordinated observations and reviewed the analysis.
+
+## Funding and conflict of interest
+This work received independent funding from the Coastal Research Fund. The authors report no competing interests.
+
+## Data availability
+The observation summary and field protocol are available in the accompanying study record. No individual animal identifiers are included.
 
 ## References
-[1] "Multi-Site Sodium Chloride Crystallization Dataset", 2024.` },
-  { fileName: 'clean-source.md', role: 'cited', text: intro + '# Multi-Site Sodium Chloride Crystallization Dataset\n\nIndependent measurements collected across several laboratories.' },
+[1] "Kelp Forest Sea Otter Foraging Observations." Ellery M, Reed J. Journal of Marine Ecology. 2025; 22(1): 15-29.
+[2] "Sea Otter Natural History and Coastal Habitat." Vale P, et al. Marine Mammal Field Guide. 2024; 3rd ed.: 88-103.` },
+  { fileName: 'clean-sea-life-source.md', role: 'cited', text: intro + `# Kelp Forest Sea Otter Foraging Observations
+
+Journal of Marine Ecology | Field Study | 2025
+
+Authors: Mira Ellery and Jonah Reed
+Coastal Biodiversity Research Institute
+
+## Abstract
+The study record summarizes the multi-site observations of sea otter foraging activity used in the accompanying report.
+
+## Data and methods
+The data comes from the Coastal Kelp Forest Observation Register. The documented sample contains 480 observation samples collected at 12 coastal sites across three regions over three seasons. Sea urchins appeared in 62% of the recorded foraging observations.
+
+## Limitations
+The records describe the monitored sites and observation periods. They are not presented as a census of all sea otters or all coastal habitats.
+
+## References
+The field protocol and site summaries are archived with the study record.` },
 ];

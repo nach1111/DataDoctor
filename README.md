@@ -16,7 +16,7 @@ cp .env.example .env.local # optional; leave values empty for offline analysis
 npm run dev
 ```
 
-Open `http://localhost:3000`. Select a PDF, TXT, or Markdown report and optional cited sources, or click **Run demo case**. The demo is fictional. **Download demo PDF** provides the same fictional report as a PDF with a tiny-font hidden instruction for the upload flow.
+Open `http://localhost:3000`. Select a PDF, TXT, or Markdown report and optional cited sources, or run either fictional demo case. The low-score chemistry example includes a tiny-font hidden instruction. The clean sea otter example has no flagged concerns and scores 100. Both are available as downloads and are marked fictional.
 
 Commands:
 
@@ -63,7 +63,7 @@ flowchart LR
   V --> C[Score, graph and report]
 ```
 
-Core modules live in `src/lib/pipeline/`; detectors are in `src/lib/detectors/`. API routes use Node.js runtime. `GET /api/health` is an immediate readiness check. `GET /api/demo` runs the same pipeline as an upload; it does not return precomputed findings.
+Core modules live in `src/lib/pipeline/`; detectors are in `src/lib/detectors/`. API routes use Node.js runtime. `GET /api/health` is an immediate readiness check. `GET /api/demo` runs the low-score case through the pipeline; `GET /api/demo?case=clean` runs the clean sea otter case. Neither returns precomputed findings.
 
 ## Findings and scoring
 
